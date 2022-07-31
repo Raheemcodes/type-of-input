@@ -1,52 +1,62 @@
 body {
-    background: #f5f5f5;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-  }
-  
-  main {
-    margin: 2rem 1rem;
-  }
-  
-  p {
-    font-size: 1.5rem;
-    margin-bottom: 5rem;
-  }
-  
-  a {
-    font-size: 1.2rem;
-    background-color: black;
-    color: #f5f5f5;
-    padding: 0.5rem;
-    cursor: pointer;
-  }
-  
-  /* To detect if an accurate pointing device (mouse, stylus) is the primary input device */
-  @media (pointer: fine) {
+  background: #f5f5f5;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  margin: 2rem 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+span {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5rem;
+}
+
+a {
+  font-size: 1.2rem;
+  background-color: black;
+  color: #f5f5f5;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+a:hover, a:active {
+  font-weight: bold;
+  background-color: #f5f5f5;
+  color: black;
+  border: 2px solid black;
+}
+
+/* To detect if an accurate pointing device (mouse, stylus) is the primary input device */
+@media (pointer: fine) {
     p::after {
-      content: ' a [ mouse or stylus ] as the primary form of input';
+      content: ' a [mouse or stylus] as the primary form of input'
     }
   
     a:hover {
-      font-weight: bold;
-      background-color: #f5f5f5;
-      color: black;
-      border: 2px solid black;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    color: black;
+    border: 2px solid black;
     }
   }
-  
-  /* To detect if a pointing device of limited accuracy (touch screen) is the primary input device */
+
+/* To detect if a pointing device of limited accuracy (touch screen) is the primary input device */
   @media (pointer: coarse) {
     p::after {
-      content: ' a [ touch screen ] as the primary form of input';
-    }
-  
-    a:active {
-      font-weight: bold;
-      background-color: #f5f5f5;
-      color: black;
-      border: 2px solid black;
+      content: ' a [touch screen] as the primary form of input'
+    }  
+    
+     a:active {
+    font-weight: bold;
+    background-color: #f5f5f5;
+    color: black;
+    border: 2px solid black;
     }
   }
-  

@@ -3,7 +3,7 @@
 ### Codepen - https://codepen.io/raheemscorp/pen/JjLMYEo
 ### StackBlitz - https://stackblitz.com/edit/web-platform-zhfjzd?file=index.html
 
-#### Tip - To verify the integrity of this code inspect the browser then switch between the desktop and touch devices.
+#### Tip - To verify the integrity of this code, inspect the browser then switch between the desktop and touch devices.
 
 ## Features
 
